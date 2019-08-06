@@ -33,7 +33,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.os.StrictMode;
-import android.support.v7.app.AppCompatActivity;
 
 public class SocialSharing extends CordovaPlugin {
 
