@@ -1,0 +1,48 @@
+{
+    "name": "com.peerio.cordova.plugin.social",
+    "version": "5.0.12",
+    "description": "Share text, images (and other files), or a link via the native sharing widget of your device. Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.",
+    "cordova": {
+        "id": "com.peerio.cordova.plugin.social",
+        "platforms": [
+            "ios",
+            "android",
+            "wp8"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PeerioTechnologies/peerio-cordova-social"
+    },
+    "keywords": [
+        "Social",
+        "Share",
+        "Twitter",
+        "Facebook",
+        "Email",
+        "SMS",
+        "WhatsApp",
+        "Tumblr",
+        "Pocket",
+        "LinkedIn",
+        "cordova",
+        "ecosystem:cordova",
+        "cordova-ios",
+        "cordova-android",
+        "cordova-windows"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ],
+    "author": "Eddy Verbruggen - @EddyVerbruggen",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Samvel Avanesov",
+            "email": "seavan@gmail.com"
+        }
+    ]
+}
