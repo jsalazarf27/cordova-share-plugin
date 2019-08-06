@@ -385,6 +385,8 @@ public class SocialSharing extends CordovaPlugin {
       sendIntent.setType(fileType);
       saveFile(Base64.decode(encodedImg, Base64.DEFAULT), dir, sanitizeFilename(fileName));
       localImage = "file://" + dir + "/" + fileName;
+    } else if (image.startsWith("/storage")) {
+      return Uri.fromFile(new File(image));
     } else if (!image.startsWith("file://")) {
       throw new IllegalArgumentException("URL_NOT_SUPPORTED");
     }
