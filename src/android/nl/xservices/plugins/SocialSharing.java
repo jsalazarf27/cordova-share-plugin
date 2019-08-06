@@ -32,6 +32,9 @@ import java.util.TimerTask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.os.StrictMode;
+import android.support.v7.app.AppCompatActivity;
+
 public class SocialSharing extends CordovaPlugin {
 
   private static final String ACTION_AVAILABLE_EVENT = "available";
@@ -191,6 +194,9 @@ public class SocialSharing extends CordovaPlugin {
 
     final CordovaInterface mycordova = cordova;
     final CordovaPlugin plugin = this;
+
+    StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
 
     cordova.getThreadPool().execute(new SocialSharingRunnable(callbackContext) {
       public void run() {
