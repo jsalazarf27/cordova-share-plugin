@@ -1,5 +1,5 @@
-# Repositorio principal
-	https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin
+# [Repositorio principal](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin)
+	https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin 
 
 
 # PhoneGap Social Sharing plugin for Android, iOS and Windows Phone
