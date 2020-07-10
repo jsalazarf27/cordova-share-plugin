@@ -59,7 +59,15 @@
 
     <config-file target="AndroidManifest.xml" parent="/*">
     </config-file>
-
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <provider android:authorities="${applicationId}.provider" 
+                android:exported="false" 
+                android:grantUriPermissions="true" 
+                android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+        </provider>
+    </config-file>
+    <resource-file src="src/android/res/xml/provider_paths.xml" target="res/xml/provider_paths.xml" />
     <source-file src="src/android/nl/xservices/plugins/SocialSharing.java" target-dir="src/nl/xservices/plugins"/>
   </platform>
 
