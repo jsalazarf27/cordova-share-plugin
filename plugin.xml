@@ -89,7 +89,7 @@
       </provider>
     </config-file>
 
-    <!--<source-file src="src/android/nl/xservices/plugins/SocialSharing.java" target-dir="src/nl/xservices/plugins"/>-->
+    <source-file src="src/android/nl/xservices/plugins/SocialSharings.java" target-dir="src/nl/xservices/plugins"/>
     <source-file src="src/android/nl/xservices/plugins/ShareChooserPendingIntent.java" target-dir="src/nl/xservices/plugins"/>
     <source-file src="src/android/nl/xservices/plugins/FileProvider.java" target-dir="src/nl/xservices/plugins"/>
     <source-file src="src/android/res/xml/sharing_paths.xml" target-dir="res/xml"/>

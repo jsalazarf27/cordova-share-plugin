@@ -40,7 +40,7 @@ import java.util.TimerTask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SocialSharing extends CordovaPlugin {
+public class SocialSharings extends CordovaPlugin {
 
   private static final String ACTION_AVAILABLE_EVENT = "available";
   private static final String ACTION_SHARE_EVENT = "share";
@@ -133,7 +133,7 @@ public class SocialSharing extends CordovaPlugin {
 
   private boolean invokeEmailIntent(final CallbackContext callbackContext, final String message, final String subject, final JSONArray to, final JSONArray cc, final JSONArray bcc, final JSONArray files) throws JSONException {
 
-    final SocialSharing plugin = this;
+    final SocialSharings plugin = this;
     cordova.getThreadPool().execute(new SocialSharingRunnable(callbackContext) {
       public void run() {
         Intent draft = new Intent(Intent.ACTION_SENDTO);
@@ -583,7 +583,7 @@ public class SocialSharing extends CordovaPlugin {
       }
     }
     final String shareMessage = message;
-    final SocialSharing plugin = this;
+    final SocialSharings plugin = this;
     cordova.getThreadPool().execute(new SocialSharingRunnable(callbackContext) {
       public void run() {
         final Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -619,7 +619,7 @@ public class SocialSharing extends CordovaPlugin {
     final String subject = null; //options.optString("subject");
     final String image = null; // options.optString("image");
     final String phonenumbers = getPhoneNumbersWithManufacturerSpecificSeparators(p_phonenumbers);
-    final SocialSharing plugin = this;
+    final SocialSharings plugin = this;
     cordova.getThreadPool().execute(new SocialSharingRunnable(callbackContext) {
       public void run() {
         Intent intent;
